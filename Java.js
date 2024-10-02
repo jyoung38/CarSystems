@@ -32,7 +32,7 @@ class CarManager
 
     displayCars() 
     {
-        return this.cars.map(car => `Brand: ${car.name}, Model: ${car.model}, Year: ${car.year}, Price: $${car.price.toFixed(2)}`).join('\n');
+        return this.cars.map(car => `Name: ${car.name}, Model: ${car.model}, Year: ${car.year}, Price: $${car.price.toFixed(2)}`).join('\n');
     }
 
     showTotalPrice(currentYear) {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () =>
         carManager.cars.forEach(car => 
         {
             const carInfo = document.createElement('div');
-            carInfo.textContent = `Brand:  ${car.name}, Model:  ${car.model}, Year:  ${car.year}, Price: ($): ${car.price.toFixed(2)}`; 
+            carInfo.textContent = `Name:  ${car.name}, Model:  ${car.model}, Year:  ${car.year}, Price: ($): ${car.price.toFixed(2)}`; 
             carList.appendChild(carInfo);
         });
     }
