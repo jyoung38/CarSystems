@@ -37,7 +37,7 @@ class CarManager
 
     showTotalPrice(currentYear) {
         let totalPrice = 0;
-        this.cars.forEach(car => {totalPrice += car.calculatePrice(currentYear); //same thing as saying totalPrice = totalPrice + car.calulatePrice / totals the price of the cars
+        this.cars.forEach(car => {totalPrice = totalPrice + car.calculatePrice(currentYear); //add all car prices up / has the foreach function to go through the array for each element of it
         });
         return `Total Price of all cars: $${totalPrice.toFixed(2)}`; //return the total price within a rounded decimal digit of 2
     }
