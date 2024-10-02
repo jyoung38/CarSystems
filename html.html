@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Inventory</title>
+</head>
+<body>
+    <h1>Car Inventory</h1>
+    <form id="carForm">
+        <label for="name">Car Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="model">Car Model:</label>
+        <input type="text" id="model" name="model" required>
+
+        <label for="year">Manufacture Year:</label>
+        <input type="number" id="year" name="year" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required>
+
+        <button type="submit">Add Car</button>
+    </form>
+
+    <h2>Car List</h2>
+    <div id="carList"></div>
+
+    <button id="calculateTotal">Calculate Total Price:</button>
+    <p id="totalPrice"></p>
+
+    <script src="Java.js"></script>
+</body>
+</html>
